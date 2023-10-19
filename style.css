@@ -147,8 +147,8 @@ h5 {
 }
 
 .box {
-        position: relative;
-        display: inline-block; /* Make the width of box same as image */
+    position: relative;
+    display: inline-block; 
         
 }
 

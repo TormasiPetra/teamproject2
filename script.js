@@ -1,3 +1,6 @@
+function myFunction() {
+    let input = document.getElementById("myText").value;
+
 const words = {
     noun: ["poem", "quality", "location", "guidance", "comparison"],
     verbs: ["help", "seek", "require", "share", "steal"],
@@ -19,7 +22,7 @@ let year = 0 // 1900 < year < 2023
 
 // https://randomwordgenerator.com/noun.php
 
-let input = "arock"
+
 
 const vowels = ["a", "e", "i", "o", "u", "y"]
 const upperCase = (string) => string.charAt(0).toUpperCase() + string.slice(1);
@@ -28,9 +31,9 @@ const randomNameNumber = (min, max) => Math.floor(Math.random() * (max - min)) +
 const bandNameGenerator = (data) => {
     if(vowels.includes(data[0]) && vowels.includes(data[data.length-1]) ){
         bandName = `The ${upperCase(words.adjectives[randomNameNumber(0, words.adjectives.length)])}`
-    } /* else if (vowels.includes(data[0])) {
+    }  else if (vowels.includes(data[0])) {
         bandName = `${upperCase(words.names[randomNameNumber(0, words.names.length )])} ${upperCase(words.verbs[randomNameNumber(0, words.verbs.length)])}s`
-    } */ else {
+    } else {
         bandName = `${upperCase(words.adjectives[randomNameNumber(0, words.adjectives.length )])} ${upperCase(words.names[randomNameNumber(0, words.names.length)])}`
     }
     return bandName
@@ -38,7 +41,7 @@ const bandNameGenerator = (data) => {
 console.log(bandNameGenerator(input))
 
 
-let counter = 0
+/* let counter = 0
 for(let i = 0; i < vowels.length; i++){
     if(vowels[i] === input[0]){
         counter++
@@ -47,15 +50,15 @@ for(let i = 0; i < vowels.length; i++){
     }
 } 
 
-console.log(counter) 
+// console.log(counter) 
     
 if (counter === 1 ) {
     bandName = "The " + bandNameGenerator(words.adjectives[randomNameNumber(0, words.adjectives.length )])
     } else {
     bandName = bandNameGenerator(words.adjectives[randomNameNumber(0, words.adjectives.length )]) + ' ' + bandNameGenerator(names[randomNameNumber(0, words.names.length)])
-    }
+    } */
 
-console.log(bandName)   
+// console.log(bandName)   
 
 
 const albumTitleGenerator = (generatedBandName) => {
@@ -191,7 +194,7 @@ console.log(counter2)
 console.log(fourthChar)
 console.log(minusFourthChar)
 */
-//console.log(year)
+// console.log(year)
 
 let album = {
     bandname: bandName,
@@ -201,9 +204,7 @@ let album = {
 }
 console.log(album) 
 
-function myFunction() {
 
-    var x = document.getElementById("myText").value;
     document.getElementById("demo").innerHTML = bandName;
     
   
