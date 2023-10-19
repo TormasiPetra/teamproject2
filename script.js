@@ -63,7 +63,7 @@ if (counter === 1 ) {
 
 const albumTitleGenerator = (generatedBandName) => {
     if(generatedBandName.includes("The") /* && (Math.floor(bandName.length % 2)) === 0 */ ){
-        albumTitle = upperCase(`The ${words.adjectives[Math.floor(Math.random() * (5 - 0) + 0)]} ${words.noun[Math.floor(Math.random() * (5 - 0) + 0)]}` )
+        albumTitle = upperCase(`The ${words.verbs[Math.floor(Math.random() * (5 - 0) + 0)]} ${words.noun[Math.floor(Math.random() * (5 - 0) + 0)]}` )
 
     } else {
         albumTitle = upperCase(words.verbs[Math.floor(Math.random() * (5 - 0) + 0)] +" "+ words.conjunction[Math.floor(Math.random() * (5 - 0) + 0)] +" "+ words.noun[Math.floor(Math.random() * (5 - 0) + 0)])
