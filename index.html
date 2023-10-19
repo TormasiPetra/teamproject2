@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Document </title>
+    <title> BandCreator </title>
 
     <link rel="shortcut icon" href="Cc_logo-02.png" type="image/x-icon">
 
@@ -13,22 +13,88 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  
+    <script src="script.js"></script>
+     
+</head> 
 
-</head>
+
 <body>
-    <div class="leftside">
-        <h1> Create your own Band </h1>
-        <h2> This website has been created to allow you to create the unique band and album title you have dreamed of for so long. 
-        <br>
+	<div class="container">
+    	<div class="wrapper">
+        	<h1> Create your own Band </h1>
+        	<h2> This website has been created to allow you to create the unique band and album title you have dreamed of for so long. 
+        	<br>
         You only have to fill in the given forms and the generator will work its magic to fill out the information on the album cover. </h2>
-        <form action="">
+        	<form action="">
                 <label for="generate"> Generate here </label>
                 <br>
-                <input type="text" id="frame"> 
-        </form>
-         <button> Generate </button>
+                <input type="text" id="myText" placeholder="Type in something..."> 
+        	</form>
+         	<button onclick="myFunction()"> Generate </button>
+            
+            
+            <div class="pictureselect">
+        		<label> Choose a picture </label>
+            	
+                <div class="pics">
+            	<img class="chooseimg" src="https://i1.sndcdn.com/artworks-000172522300-10s9d6-t500x500.jpg" alt="mountain2">
+            
+            	<img class="chooseimg" src="https://www.eventige.com/hubfs/360BrandFuel-Growth-Marketing-Agency.png" alt="mountain2">
+                
+                <img class="chooseimg" src="https://cdn.dribbble.com/users/879147/screenshots/15843427/media/4cec4239ac4dff78979bc8d5e9ad8678.jpeg?compress=1&resize=1000x750" alt="mountain2">
+                
+                <img class="chooseimg" src="https://cdn.dribbble.com/users/2920041/screenshots/6701782/surreal-human-mind-illustration-by-antlii_2x.png" alt="mountain2">
+                
+                <img class="chooseimg" src="https://i.pinimg.com/736x/cc/9f/a0/cc9fa064270b6d2de4ce24b5280b8af1.jpg" alt="mountain2">
+                
+                <img class="chooseimg" src="https://cdn.musicbed.com/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_40,w_630,h_630/v1637360851/production/albums/8370" alt="mountain2">
+                
+                </div>
+                
+                <section class="descriptions">
+                
+                	<div class="info">
+                		<h5> i </h5>
+                		<h4>Band name generator algorithm</h4>
+                    </div>
+                    <div class="info">
+                		<h5> i </h5>
+                		<h4>Album title generator algorithm</h4>
+                    </div>
+                    <div class="info">
+                		<h5> i </h5>
+                		<h4>Description generator algorithm</h4>
+                    </div>
+                    <div class="info">
+                		<h5> i </h5>
+                		<h4>Year generator algorithm</h4>
+                    </div>
+                </section>
+        	</div>
+    	</div>
+    
+    </div>
+	<div class="box">
+    	<img src="https://i1.sndcdn.com/artworks-000172522300-10s9d6-t500x500.jpg" alt="Flying Kites">
+        <div class="text">
+            <h6 id="demo"> Band Name </h6>
+            <hr class="line">
+            <h6 id="album"> Album title </h6>
+            
+        </div>
+        <div class="year">
+        <h6 id="rotate"> Year </h6>
+        </div>
+        
+        
     </div>
 
-    <img src="artworks1.jpg" alt="artwork1">
+ 
+ 
+
+
+
+       
 </body>
 </html>

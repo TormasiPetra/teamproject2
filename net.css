@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document </title>
+
+    <link rel="shortcut icon" href="Cc_logo-02.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+ 	
+ 
+ <style>
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: 58px;
+    margin-right: 58px;
+}
+
+.form {
+
+}
+
+h1 {
+	padding-bottom: 20px;
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	font-size: 34px;
+	font-weight: 700;
+}
+
+h2 {
+	padding-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+label {
+	margin-top: 100px;
+    margin-bottom: 20px;
+	color: #848484;
+	font-family: Inter;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+input {
+	margin-top: 10px;
+    margin-bottom: 10px;
+	border-radius: 10px;
+	border: 2px solid #A0A0A0;
+
+	background: #FFF;
+    width: 479px;
+	height: 52px;
+}
+
+button {
+    width: 134px;
+    height: 45px;
+    border-radius: 10px;
+    background: #414141;
+    color:  #FFF;
+    font-size: 19px;
+    float: right;
+}
+
+button.i {
+	width: 18px;
+	height: 18px;
+    background: #FFF;
+    border: 2px solid ;
+    float: left;
+    color: #A0A0A0;
+}
+
+.leftside {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+rightside {
+	float: left;
+}
+ 
+ </style>
+</head>
+<body>
+    <wrapper>
+    <div class="leftside">
+        <h1> Create your own Band </h1>
+        <h2> This website has been created to allow you to create the unique band and album title you have dreamed of for so long. 
+        <br>
+        You only have to fill in the given forms and the generator will work its magic to fill out the information on the album cover. </h2>
+        <div class="form">
+        <form action="">
+                <label for="generate"> Generate here </label>
+                <br>
+                <input type="text" id="frame"> 
+        </form>
+         <button> Generate </button>
+         
+         <button class="i"> i </button>
+         </div>
+    </div>
+    </wrapper>
+    
+ 	<wrapper class="rightside">
+	<img src="https://th.bing.com/th/id/R.f288e8f41d782dd8b0acef14f9fd8837?	rik=IdZikv%2bG6so4pA&riu=http%3a%2f%2feskipaper.com%2fimages%2fbeautiful-mountain-meadow-1.jpg&ehk=YxDGWnjpfK3h2Xtyazz76uwyvsomP78SzoeCbqbKWbE%3d&risl=&pid=ImgRaw&r=0" alt="alternatetext">
+     </wrapper>
+    
+</body>
+</html>
