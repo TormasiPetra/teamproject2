@@ -182,6 +182,6 @@ h5 {
     	font-size: 55px;
     	font-weight: 400;
         color: #414141;
-        width: 40%; /* Set the width of the positioned div */
+        width: 80%; /* Set the width of the positioned div */
         rotate: 90deg;
 }
