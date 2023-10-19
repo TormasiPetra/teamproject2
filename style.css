@@ -149,24 +149,24 @@ h5 {
 .box {
         position: relative;
         display: inline-block; /* Make the width of box same as image */
-        width: 450px;
+        
 }
 
 .box .text{
-
-        position: absolute;
-        z-index: 2;
-        margin: 0 auto;
-        left: 0;
-        right: 0;        
-        text-align: center;
-        top: 80%; /* Adjust this value to move the positioned div up and down */
+   
+    position: absolute;
+    z-index: 2;
+    margin: 0 auto;
+    left: 0;
+    right: 0;        
+    text-align: center;
+    top: 85%; /* Adjust this value to move the positioned div up and down */
         
     font-family: Jomhuria;
     font-size: 55px;
     font-weight: 400;
-        color: #414141;
-        width: 40%; /* Set the width of the positioned div */
+    color: #414141;
+    width: 80%; /* Set the width of the positioned div */
 }
 
 .box .year {
@@ -174,7 +174,7 @@ h5 {
         z-index: 2;
         margin: 0 auto;
   		top: 0px;
-  		left: -80px;        
+  		left: -95px;        
         text-align: left;
         top: 25%; /* Adjust this value to move the positioned div up and down */
         
