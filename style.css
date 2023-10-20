@@ -67,7 +67,7 @@ input {
 }
 
 
-.generatebutton {
+button {
     width: 134px;
     height: 45px;
     border-radius: 10px;
@@ -159,7 +159,7 @@ h5 {
 .box {
     position: relative;
     display: inline-block; 
-        
+    transition: transform .7s ease-in-out;   
 }
 
 .box .text{
