@@ -213,3 +213,12 @@ console.log(album)
     
     document.getElementById("rotate").innerHTML = year;
   }
+
+
+
+function imageChange (fileName){
+
+   let img = document.querySelector("#bannerImage");
+    img.setAttribute("src", fileName);
+
+}

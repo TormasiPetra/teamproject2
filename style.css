@@ -67,7 +67,7 @@ input {
 }
 
 
-button {
+.generatebutton {
     width: 134px;
     height: 45px;
     border-radius: 10px;
@@ -94,6 +94,16 @@ button {
  	display: flex;
     flex-direction: column;
     width: 500px;
+}
+
+.images{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+	height: 60px;
+    border-radius: 12px;
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    
 }
 
 .chooseimg {
