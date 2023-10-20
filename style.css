@@ -156,6 +156,31 @@ h5 {
     align-items: center;
 }
 
+.infoi{
+    position: relative; 
+} 
+
+div.test {
+    position: absolute;
+    display: none;
+    width: 340px;
+    height: 85px;
+    top: 8px;
+    left: 10px; 
+    border: 2px solid #848484; 
+    background-color: #F7F7F7;
+    border-radius: 0px 5px 5px 5px;
+
+}
+
+h5.band-name:hover {
+    color: red;
+}
+
+h5.band-name:hover ~ div.test {
+    display: block;
+}
+
 .box {
     position: relative;
     display: inline-block; 
