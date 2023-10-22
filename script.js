@@ -104,7 +104,7 @@ const descriptionGenerator = (generatedTitle) => {
             description = britishIndie
             
         } else if (element === generatedTitle[x] && index > 18 && index < 28){
-            description = "semmi"
+            description = britishIndie
 
         }
         
@@ -202,6 +202,7 @@ let album = {
     description: description,
     year: year
 }
+
 console.log(album) 
 
 
@@ -212,7 +213,7 @@ console.log(album)
     
     
     document.getElementById("rotate").innerHTML = year;
-  }
+}
 
 
 

@@ -7,12 +7,14 @@
 body {
 
    	display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 120px;
     margin-bottom: 120px;
     margin-left: 58px;
     margin-right: 58px;
     gap: 75px;
+
  
 }
 
@@ -184,8 +186,14 @@ h5.band-name:hover ~ div.test {
 .box {
     position: relative;
     display: inline-block; 
-    transition: transform .7s ease-in-out;   
+    transition: transform .7s ease-in-out; 
 }
+
+.box:hover {
+    transform: rotateY(180deg)  
+}
+
+
 
 .box .text{
    
