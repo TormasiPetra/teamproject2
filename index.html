@@ -56,7 +56,34 @@
                 	<div class="info">
                 		<div class="infoi">
                       <h5 class="band-name"> i </h5>
-                      <div class="test"> lorem ipsum</div>
+                      <div class="test"> let includeArray = ['r', 's', 'j', 'd', 'e', 't', 'b', 'm', 'f', 'o', 'q', 'w', 'x']
+
+                        if (yearFirstTwoChar === 20){ // <24 && >=0
+                            for(let i = 0; i < albumTitle.length; i++){
+                                if(albumTitle.length < 24 && albumTitle.length >= 10){
+                                    yearLastTwoChar = albumTitle.length
+                                } else if (albumTitle.length < 10 ){
+                                    yearLastTwoChar = "0" + albumTitle.length
+                                } else {
+                                    yearLastTwoChar = albumTitle.length-13
+                                }
+                            }
+                        } else if (yearFirstTwoChar === 19) {
+                            for(let i = 0; i < albumTitle.length; i++){
+                                if(includeArray.includes(albumTitle[13]) && albumTitle.length < 12){
+                                    yearLastTwoChar = albumTitle.length * 7
+                                } else if(includeArray.includes(albumTitle[13]) && albumTitle.length > 12 && albumTitle.length < 25){
+                                    yearLastTwoChar = albumTitle.length * 4
+                                } else if(includeArray.includes(albumTitle[13]) && albumTitle.length > 25 && albumTitle.length < 33){
+                                    yearLastTwoChar = albumTitle.length * 3
+                                } else if(includeArray.includes(albumTitle[13]) && albumTitle.length > 32 && albumTitle.length < 45){
+                                    yearLastTwoChar = albumTitle.length * 2
+                                } else {
+                                    yearLastTwoChar = albumTitle.length
+                                }
+                            }
+                        }
+                      </div>
                     </div>
                 		<h4>Band name generator algorithm</h4>
                     </div>
