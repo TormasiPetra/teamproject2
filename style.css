@@ -201,6 +201,7 @@ h5.album-name:hover ~ div.test {
 }
 
 .card {
+    border-radius: 50px;
     height: 100%;
     width: 100%;
     position: relative;
@@ -273,12 +274,12 @@ h5.album-name:hover ~ div.test {
 }
 
 .opacity {
+    border-radius: 50px;
     position: absolute;
     z-index: 2;
     background-color: rgba(52, 52, 52, 0.75);
     width: 780px;
     height: 780px;
-    border-radius: 50px;
 }
 
 p.description-back {
