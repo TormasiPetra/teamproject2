@@ -54,51 +54,41 @@
                 <section class="descriptions">
                 
                 	<div class="info">
-                		<div class="infoi">
-                      <h5 class="band-name"> i </h5>
-                      <div class="test"> let includeArray = ['r', 's', 'j', 'd', 'e', 't', 'b', 'm', 'f', 'o', 'q', 'w', 'x']
+                	    <div class="infoi">
+                        <h5 class="band-name"> i </h5>
+                        <div class="test"> az input első és utolsó betű magánhangzó-e </div>
+                    </div>                    
+                    <h4>Band name generator algorithm</h4>
+                </div>
 
-                        if (yearFirstTwoChar === 20){ // <24 && >=0
-                            for(let i = 0; i < albumTitle.length; i++){
-                                if(albumTitle.length < 24 && albumTitle.length >= 10){
-                                    yearLastTwoChar = albumTitle.length
-                                } else if (albumTitle.length < 10 ){
-                                    yearLastTwoChar = "0" + albumTitle.length
-                                } else {
-                                    yearLastTwoChar = albumTitle.length-13
-                                }
-                            }
-                        } else if (yearFirstTwoChar === 19) {
-                            for(let i = 0; i < albumTitle.length; i++){
-                                if(includeArray.includes(albumTitle[13]) && albumTitle.length < 12){
-                                    yearLastTwoChar = albumTitle.length * 7
-                                } else if(includeArray.includes(albumTitle[13]) && albumTitle.length > 12 && albumTitle.length < 25){
-                                    yearLastTwoChar = albumTitle.length * 4
-                                } else if(includeArray.includes(albumTitle[13]) && albumTitle.length > 25 && albumTitle.length < 33){
-                                    yearLastTwoChar = albumTitle.length * 3
-                                } else if(includeArray.includes(albumTitle[13]) && albumTitle.length > 32 && albumTitle.length < 45){
-                                    yearLastTwoChar = albumTitle.length * 2
-                                } else {
-                                    yearLastTwoChar = albumTitle.length
-                                }
-                            }
-                        }
-                      </div>
+                	<div class="info">
+                	    <div class="infoi">
+                        <h5 class="album-name"> i </h5>
+                        <div class="test"> a bandname tartalmazza e a The szót </div>
+                    </div>                    
+                    <h4>Album title generator algorithm</h4>
                     </div>
-                		<h4>Band name generator algorithm</h4>
+                    
+                	<div class="info">
+                	    <div class="infoi">
+                        <h5 class="album-name"> i </h5>
+                        <div class="test"> megnézi, hogy egy random megadott betűje az album névnek melyik részén van az abc-nek </div>
+                    </div>                    
+                    <h4> Description generator algorithm </h4>
                     </div>
-                    <div class="info">
-                		<h5> i </h5>
-                		<h4>Album title generator algorithm</h4>
+                    
+                	<div class="info">
+                	    <div class="infoi">
+                        <h5 class="album-name"> i </h5>
+                            <div class="test"> <p>megnézi, hogy a 4. és a hátolról a 4. betűje az albumnévnek hányszor szerepel, majd elemzi, az albumnév hosszát is és az alapján adja meg az évszámot</p>
+                        
+                            </div>
+                        </div>                    
+                        <h4> Year generator algorithm </h4>
                     </div>
-                    <div class="info">
-                		<h5> i </h5>
-                		<h4>Description generator algorithm</h4>
-                    </div>
-                    <div class="info">
-                		<h5> i </h5>
-                		<h4>Year generator algorithm</h4>
-                    </div>
+
+                    
+
                 </section>
         	</div>
     	</div>

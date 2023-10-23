@@ -44,7 +44,7 @@ img {
 }
 
 label {
-	margin-top: 100px;
+	margin-top: 80px;
     margin-bottom: 20px;
 	color: #848484;
 	font-family: Inter;
@@ -136,14 +136,16 @@ h4 {
 h5 {
 	text-align: center;
     font-family: Roboto Serif;
-	font-size: 14px;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 16px;
+	line-height: 20px;
     border: 2px solid #A0A0A0;
     border-radius: 20px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    color: #A0A0A0;
+    margin-top: 2px;
     
 }
 
@@ -164,22 +166,26 @@ h5 {
 
 div.test {
     position: absolute;
+    z-index: 3;
     display: none;
-    width: 340px;
+    width: 450px;
     height: 85px;
     top: 8px;
     left: 10px; 
     border: 2px solid #848484; 
     background-color: #F7F7F7;
-    border-radius: 0px 5px 5px 5px;
+    border-radius: 0px 10px 10px 10px;
+    color: #414141;
+    text-align: center;
 
 }
 
-h5.band-name:hover {
-    color: red;
-}
+
 
 h5.band-name:hover ~ div.test {
+    display: block;
+}
+h5.album-name:hover ~ div.test {
     display: block;
 }
 
