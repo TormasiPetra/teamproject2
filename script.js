@@ -207,12 +207,12 @@ console.log(album)
 
 
     document.getElementById("demo").innerHTML = bandName;
-    
-  
+      
     document.getElementById("album").innerHTML = albumTitle;
-    
-    
+        
     document.getElementById("rotate").innerHTML = year;
+
+    document.getElementById("back-description").innerHTML = description;
 }
 
 
@@ -221,5 +221,7 @@ function imageChange (fileName){
 
    let img = document.querySelector("#bannerImage");
     img.setAttribute("src", fileName);
-
+    
+    let img2 = document.querySelector("#bannerImageBack");
+     img2.setAttribute("src", fileName);
 }
