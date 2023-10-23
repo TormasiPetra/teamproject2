@@ -80,14 +80,16 @@ console.log(albumTitleGenerator(bandName))
 console.log(words.verbs[Math.floor(Math.random() * (5 - 0) + 0)])
 *///console.log(Math.floor(bandName.length / 3)-1)
 
-let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "]
+let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 //console.log(alphabetFirst.substring(0, 5))
 
-const americanRock = `"${albumTitle}" is the latest album by the American rock band "${bandName}". The album features 12 tracks, each with a unique sound that blends classic rock with modern pop. The band's lead singer, Lena Smith, delivers powerful vocals on every track, while the guitar riffs of Jimi Hendrix and Eddie Van Halen add a touch of nostalgia to the album. The standout tracks include “Breaking Barriers”, “Inclusive Rhythms”, and “Beyond Accessibility”. Overall, Breaking Barriers is a must-listen for fans of classic rock and modern pop alike.`
+const americanRock = `Ah, "${bandName}". To many, they represent one of the greatest rock bands of all time. Their rampant success is usually attributed to this album, and rightfully so, as it's the album that launched them into the mainstream. Ranked number nineteen on Rolling Stones Greatest 500 Albums list, "${albumTitle}" is filled with distorted guitars, memorable lines, and catchy overall songs. It contains twelve tracks, with a running time of just over fourty-three minutes. What is within, is musical history.`;
 
-const americanPop =`"${albumTitle}" is the latest album by the American pop band "${bandName}". The album features 10 tracks, each with a unique sound that blends pop with electronic music. The band's lead singer, Lena Smith, delivers powerful vocals on every track, while the synth beats of Calvin Harris and David Guetta add a touch of nostalgia to the album. The standout tracks include “Electric Dreams”, “Lost in the City”, and “Pop and Roll”. Overall, Electric Dreams is a must-listen for fans of pop and electronic music alike.`
+const americanPop = `"${albumTitle}" is the second album by the American pop band "${bandName}". The album features 10 tracks, each with a unique sound that blends pop with electronic music. The band's lead singer, Lena Smith, delivers powerful vocals on every track. The standout tracks include “Electric Dreams”, “Lost in the City”, and “Pop and Roll”. Overall, "${albumTitle}" is a must-listen for fans of pop music.`;
 
-const britishIndie = `${albumTitle} is the latest album by the British indie band ${bandName}. The album features 10 tracks, each with a unique sound that blends indie rock with electronic music. The band's lead singer, Lena Smith, delivers powerful vocals on every track, while the guitar riffs of Johnny Marr and The Edge add a touch of nostalgia to the album. The standout tracks include “The Sound of Silence”, “Lost in the City”, and “Electric Dreams”. Overall, The Sound of Silence is a must-listen for fans of indie rock and electronic music alike.`
+const britishIndie = `Let’s face it… Hype will always exist in the music industry. "${bandName}" is just 4 young lads barely out of their teens. It therefore comes as an especially pleasing greeting when front-man Matt Beacon speaks the words “Don’t believe the hype” at the beginning of their 1st single. Whether it’s a reverse psychology marketing ploy or not, "${albumTitle}" is an absolute sign of maturity and level-headedness. Great second album!`;
+
+const hipHop = `"${albumTitle}" as a whole is the hip-hop equivalent of your Gambit in the 60s, The OG Godfather in the early 70s, The Untouchables out of the 80s and even Goodfellas in the early 90s. Every element of production is crafted with purpose and careful direction that contrasts with "${bandName}'s" vicious, raw, liquid flow. This is the best as hip-hop is ever going to get.`;
 
 const descriptionGenerator = (generatedTitle) => {
     let x = randomNameNumber(0, generatedTitle.length)
@@ -103,9 +105,11 @@ const descriptionGenerator = (generatedTitle) => {
         } else if (element === generatedTitle[x] && index > 12 && index < 19) {
             description = britishIndie
             
-        } else if (element === generatedTitle[x] && index > 18 && index < 28){
+        } else if (element === generatedTitle[x] && index > 18 && index < 27){
             description = britishIndie
 
+        } else if (generatedTitle[x] === " ") {
+            description = hipHop;
         }
         
     })
